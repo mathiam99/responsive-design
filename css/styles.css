@@ -112,7 +112,7 @@ h2::before{
     }
 
     .open{
-        position: absolute;
+        position: fixed;
         height: 100%;
         min-width: 80%;
         right: 0;
