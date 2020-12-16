@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive navigation bar</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="navbar">
+        
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="logo">
+            Responsive navbar
+        </div>
+
+        <nav class="navlinks">
+            <a href="#!">Do you</a>
+            <a href="#!">Hate</a>
+            <a href="#!">Writing</a>
+            <a href="#!">Hello world</a>
+            <a href="#!">program</a>
+            <a href="#!">like me</a>
+        </nav> 
+
+    </div>
+
+    <div class="movie">
+        <video src="./assets/video.mp4" id="bgvideo" autoplay loop muted></video>
+    </div>
+
+    <div class="content">
+        <h2>This website is fully Responsive</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, maiores. Amet natus sit, excepturi pariatur quis obcaecati ea saepe repellat recusandae corrupti, quibusdam rerum quasi doloribus quas. Modi, rerum eos!
+        Sapiente vitae laboriosam corporis aut expedita ipsam architecto, modi rem aliquam asperiores sunt qui omnis eius est amet delectus sed quis consectetur. Dolore obcaecati est in vitae, voluptatem corporis aliquid!
+        Corporis voluptatibus excepturi possimus. Voluptatem, blanditiis harum beatae deserunt facilis nemo modi est, sequi quibusdam hic totam ullam unde in explicabo ipsum necessitatibus quae repellat earum aliquid veniam nobis odio!</p>
+    </div>
+
+    <div class="footer">
+        <h3>footer goes here !</h3>
+    </div>
+
+    <script type="text/javascript">
+        const burger = document.querySelector('.hamburger');
+        const navlinks = document.querySelector('.navlinks');
+        burger.addEventListener('click',function(){
+            navlinks.classList.toggle('open');
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Cantora+One&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Cantora One';
+}
+
+.logo{
+    font-size: 20pt;
+    float: left;
+    margin-left: 10%;
+    display: flex;
+    align-items: center;    
+}
+
+.movie{
+    width: 100%;
+    pointer-events: none;
+}
+
+#bgvideo{
+    width: 100%;
+}
+
+.navbar{
+    background-color: rgb(0, 252, 84);
+    height: 70px;
+    display: flex;
+}
+
+.hamburger{
+    display: none;
+    padding: 5px;
+    width: 3%;
+    height: 50%;
+    margin-left: 5%;
+    margin-top: 15px;
+}
+
+.line{
+    width: 30px;
+    height: 4px;
+    margin: 4px;
+    border-radius: 40px;
+    background-color: #333;
+}
+
+nav{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: auto;
+}
+
+nav a{
+    color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content{
+    padding: 5%;
+    text-align: center;
+}
+
+h2{
+    color: rgb(0, 252, 84);
+}
+
+h2::before{
+    content: '';
+    margin-right: 10px;
+    height: 30px;
+    border: 3px solid #333;
+    border-radius: 20px;
+}
+
+.footer{
+    text-align: center;
+    height: 100px;
+    background-color: rgb(0, 252, 84);
+}
+
+
+@media screen and (max-width:768px){
+
+    .logo{
+        margin-left: 15%;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    nav{
+        display: none;
+        text-align: center;
+    }
+
+    nav > a{
+        font-size: 14pt;
+        display: block;
+        margin: 40px;
+        padding: 5%;
+    }
+
+    nav > a:nth-child(even){
+        color: #444;
+    }
+
+    .open{
+        position: absolute;
+        height: 100%;
+        min-width: 80%;
+        right: 0;
+        display: block;
+        background: linear-gradient(to bottom, rgb(0, 252, 84), #fff);
+        animation: slide 0.2s ease-in;
+    }
+
+    @keyframes slide {
+        from{
+            margin-right: -100%;
+        }
+        to{
+            margin-right: 0;
+        }
+    }
+}
